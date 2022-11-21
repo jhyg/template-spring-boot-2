@@ -1,4 +1,5 @@
 
+
 forEach: Aggregate
 representativeFor: Aggregate
 fileName: {{namePascalCase}}.java
@@ -18,7 +19,7 @@ import lombok.Data;
 import java.util.Date;
 
 @Entity
-@Table(name="{{namePascalCase}}_table")
+@Table(name="{{namePascalCase}}_tableOrder")
 @Data
 {{#setDiscriminator aggregateRoot.entities.relations nameCamelCase}}{{/setDiscriminator}}
 public class {{namePascalCase}} {{#checkExtends aggregateRoot.entities.relations namePascalCase}}{{/checkExtends}} {
